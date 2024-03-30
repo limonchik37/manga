@@ -1,13 +1,11 @@
 package com.example.mangabeta.service;
 
-import com.example.mangabeta.model.Manga;
+import com.example.mangabeta.entity.Manga;
 import com.example.mangabeta.repositories.MangaRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
