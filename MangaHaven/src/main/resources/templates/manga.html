@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring Security Example </title>
+</head>
+<body>
+<a href="/"><button>home</button></a>
+<div id="manga-details">
+    <h2 id="manga-title">title</h2>
+    <p id="manga-author">author: </p>
+    <p id="manga-description">description: </p>
+    <img id="manga-cover-image" src="" alt="coverImage" style="max-width: 200px; height: auto;"><br>
+    <button id="manga-liked" onclick="like(event)"></button>
+    <p id="manga-likes"></p>
+</div>
+
+<div id="chapterList"></div>
+
+<div>
+    <form onsubmit=addChapter(event)>
+        <label for="title">title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="chapterNumber">number:</label>
+        <input type="number" id="chapterNumber" name="chapterNumber" required><br><br>
+
+        <label for="images">images:</label>
+        <input type="file" id="images" name="images" accept="image/*" multiple required><br><br>
+
+        <button type="submit">add chapter</button>
+    </form>
+</div>
+<div>
+    <form id="manga-update-form" onsubmit="update(event)">
+        <div><label> Manga title : <input type="text" name="title"/> </label></div>
+        <div><label> author: <input type="text" name="author"/> </label></div>
+        <div><label> description: <input type="text" name="description"/> </label></div>
+        <div><label> Cover image: <input type="file" name="coverImage"/> </label></div>
+        <div><input type="submit" value="update manga"/></div>
+    </form>
+</div>
+<div>
+    <button onclick="deleteM(event)">delete manga</button>
+</div>
+
+<script src="/js/chater.js"></script>
+<script src="/js/service/manga.js"></script>
+<script src="/js/manga.js"></script>
+</body>
+</html>

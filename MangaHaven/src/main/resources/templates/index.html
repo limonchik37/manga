@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring Security Example </title>
+</head>
+<body>
+<a id="profile-link" href="/profile"><button>go to profile</button></a>
+<a href="/login"><button>login</button></a>
+<a href="/logout"><button>logout</button></a>
+<div id="mangaList"></div>
+
+<form onsubmit="addmanga(event)">
+    <div><label> Manga title : <input type="text" name="title"/> </label></div>
+    <div><label> author: <input type="text" name="author"/> </label></div>
+    <div><label> description: <input type="text" name="description"/> </label></div>
+    <div><label> Cover image: <input type="file" name="coverImage"/> </label></div>
+    <div><input type="submit" value="add manga"/></div>
+</form>
+
+<script src="/js/mangascript.js"></script>
+<script src="/js/service/user.js"></script>
+<script src="/js/user.js"></script>
+</body>

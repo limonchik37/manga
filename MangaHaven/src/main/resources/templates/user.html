@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/"><button>home</button></a>
+<!--<p><h1>suk</h1></p>-->
+<div id = "user-details">
+    <h2 id="user-username"></h2>
+    <img id="user-profile-photo" src="" alt="profilePhoto" style="max-width: 200px; height: auto;">
+</div>
+<div>
+    <form onsubmit ="updateU(event)">
+        <div><label> username: <input type="text" name="username"/> </label></div>
+        <div><label> password: <input type="password" name="password"/> </label></div>
+        <div><label> profile photo: <input type="file" name="profilePhoto"/> </label></div>
+        <div><input type="submit" value="update user"/></div>
+    </form>
+</div>
+<script src="/js/service/user.js"></script>
+<script src="/js/userinfo.js"></script>
+
+</body>
+</html>
